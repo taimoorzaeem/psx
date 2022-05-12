@@ -1,4 +1,4 @@
-const { User, validate } = require("../models/user");
+const { MarketData, validate } = require("../models/marketData");
 const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
@@ -7,10 +7,11 @@ router.post("/", async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  let user = new User(req.body);
+  let marketData = new MarketData(req.body);
 
-  user = await user.save();
-  res.send(user);
+  marketData = await marketData.save();
+
+  res.send(marketData);
 });
 
 module.exports = router;

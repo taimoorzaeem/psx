@@ -29,6 +29,7 @@ const User = mongoose.model(
   })
 );
 
+// Validation with Joi
 function validateUser(user) {
   const schema = Joi.object({
     username: Joi.string().trim().min(5).max(50).lowercase().required(),
