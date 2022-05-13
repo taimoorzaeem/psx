@@ -62,9 +62,10 @@ async function getAndSaveMarketData() {
       }
     });
   });
+  /** Save fetched data in the database */
   await axios
     .post("http://localhost:5000/api/marketData", jsonDocObject)
-    .then(() => console.log("Request finished"))
+    .then(() => console.log("Data wriiten in database successfully."))
     .catch((err) => console.log("Request Crashed\n", err));
 }
 

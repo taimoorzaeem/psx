@@ -45,8 +45,8 @@ const MarketData = mongoose.model(
 
 function validateMarketData(marketData) {
   const schema = Joi.object({
-    marketData: Joi.object([
-      {
+    marketData: Joi.array().items(
+      Joi.object().keys({
         scrip: Joi.string().required(),
         ldcp: Joi.string().required(),
         open: Joi.string().required(),
@@ -55,8 +55,8 @@ function validateMarketData(marketData) {
         current: Joi.string().required(),
         change: Joi.string().required(),
         volume: Joi.string().required(),
-      },
-    ]),
+      })
+    ),
   });
 
   return schema.validate(marketData);
