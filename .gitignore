@@ -1,5 +1,2 @@
 # exclude modules
 /node_modules
-
-# exclude the data
-data.json

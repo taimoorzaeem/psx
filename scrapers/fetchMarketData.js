@@ -1,6 +1,6 @@
 const cheerio = require("cheerio");
 const axios = require("axios");
-const fs = require("fs");
+//const fs = require("fs");
 
 let jsonDocObject = {};
 let jsonDoc = [];
@@ -54,13 +54,13 @@ async function getAndSaveMarketData() {
     };
 
     /* Write the json data to file */
-    fs.writeFile("data.json", JSON.stringify(jsonDocObject, null, 3), (error) => {
+    /*fs.writeFile("data.json", JSON.stringify(jsonDocObject, null, 3), (error) => {
       if (!error) {
         console.log("Data successfully fetched.");
       } else {
         console.log(error.message);
       }
-    });
+    });*/
   });
   /** Save fetched data in the database */
   await axios
