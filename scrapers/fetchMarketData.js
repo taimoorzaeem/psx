@@ -5,6 +5,7 @@ const axios = require("axios");
 let jsonDocObject = {};
 let jsonDoc = [];
 
+let names = [];
 let scrips = [];
 let ldcps = [];
 let opens = [];
@@ -33,9 +34,14 @@ async function getAndSaveMarketData() {
       }
     });
 
+    $("td[class=dataportal]").each((i, element) => {
+      names[i] = $(element).text().trim();
+    });
+
     const listSize = scrips.length;
     for (i = 0; i < listSize; i++) {
       let tempObj = {
+        name: names[i],
         scrip: scrips[i],
         ldcp: ldcps[i],
         open: opens[i],
@@ -52,6 +58,8 @@ async function getAndSaveMarketData() {
     jsonDocObject = {
       marketData: jsonDoc,
     };
+
+    //console.log(names);
 
     /* Write the json data to file */
     /*fs.writeFile("data.json", JSON.stringify(jsonDocObject, null, 3), (error) => {

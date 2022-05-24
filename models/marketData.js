@@ -6,6 +6,10 @@ const MarketData = mongoose.model(
   new mongoose.Schema({
     marketData: [
       {
+        name: {
+          type: String,
+          required: true,
+        },
         scrip: {
           type: String,
           required: true,
@@ -47,6 +51,7 @@ function validateMarketData(marketData) {
   const schema = Joi.object({
     marketData: Joi.array().items(
       Joi.object().keys({
+        name: Joi.string().required(),
         scrip: Joi.string().required(),
         ldcp: Joi.string().required(),
         open: Joi.string().required(),
