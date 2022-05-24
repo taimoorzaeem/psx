@@ -11,7 +11,7 @@ const app = express();
 mongoose
   .connect("mongodb://localhost/psx")
   .then(() => console.log("Connected to Mongodb..."))
-  .catch((err) => console.log("Could not connect to MongoDB...", err));
+  .catch((err) => console.error("Could not connect to MongoDB..."));
 
 const corsOptions = {
   origin: "*", // Allow any URL
