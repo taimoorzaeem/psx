@@ -8,7 +8,7 @@ const bcrypt = require("bcrypt");
 const router = express.Router();
 
 router.get("/me", auth, async (req, res) => {
-  const user = await User.findById(req.user._id).select("-password");
+  const user = await User.findById(req.user._id).select("-password -preferences");
   res.send(user);
 });
 
@@ -27,7 +27,21 @@ router.post("/", async (req, res) => {
   await user.save();
 
   const token = user.generateAuthToken();
-  res.header("x-auth-token", token).send(_.pick(user, ["_id", "name", "email"]));
+  res
+    .header("x-auth-token", token)
+    .header("access-control-expose-headers", "x-auth-token")
+    .send(_.pick(user, ["_id", "name", "email"]));
 });
+
+router.put('/preferences/:id', auth, async (req, res) => {
+  const user = await User.findById(req.params.id);
+  if (!user) return res.status(400).send(error.details[0].message);
+
+  user.preferences = req.body.preferences;
+
+  await user.save();
+
+  res.send(true);
+})
 
 module.exports = router;

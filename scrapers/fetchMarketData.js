@@ -39,7 +39,7 @@ async function getAndSaveMarketData() {
     });
 
     const listSize = scrips.length;
-    for (i = 0; i < listSize; i++) {
+    for (i = 0; i < 250; i++) {
       let tempObj = {
         name: names[i],
         scrip: scrips[i],
