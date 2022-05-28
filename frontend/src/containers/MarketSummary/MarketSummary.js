@@ -13,7 +13,7 @@ class MarketSummary extends Component {
                 </div>
                 <DataSlider />
                 <div className={Classes.tables}>
-                    <h4>Main Board</h4>
+                    <h4 className={Classes.heading4}>Main Board</h4>
 
                     <MarketTable headings={['NAME', 'IDCPS', 'OPENS', 'HIGHS', 'LOWS', 'CURRENTS', 'CHANGES', 'VOLUMES']}
                         caption={'MARKET SUMMARY DATA'}

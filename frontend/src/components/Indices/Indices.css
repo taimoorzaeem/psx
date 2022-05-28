@@ -1,16 +1,18 @@
 .body {
     position: absolute;
-    top: 50vh;
+    top: 32vh;
     right: 10vw;
     width: 80%;
     height: 65vh;
     margin: 0 auto 10vh;
     text-align: left;
-    padding-left: 1.5em;
+    background-color: #E8F9FD;
+    padding: 0 1.5em 1em;
     font-size: 1.2rem;
-    background-color: #F5F5F5;
     color: black;
     box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .tabhead {
@@ -50,4 +52,10 @@
     box-sizing: border-box;
     font-size: 0.6rem;
     padding-top: 5em;
+    
+}
+
+.heading4 {
+    padding-top: 12px;
+    border-top: 4px solid #7FB5FF;
 }

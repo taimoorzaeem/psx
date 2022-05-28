@@ -4,10 +4,12 @@ import BasicTabs from '../../UI/Tabs/Tabs';
 
 const marketWatch = props => {
     return (
-            <div id='MarketWatch' className={Classes.body}> 
-            <h3>Market Watch</h3>
+        <div>
+            <div className={Classes.body} style={{backgroundColor: props.bgcolor}}> 
+            <h4 className={Classes.heading4}>Market Watch</h4>
             <BasicTabs/>
             </div>
+        </div>
 
     );
 }

@@ -1,6 +1,6 @@
 .heading {
     position: absolute;
-    top: 13vh;
+    top: 8.5vh;
     right: 10vw;
     height: 7vh;
     width: 80%;
@@ -10,8 +10,10 @@
     box-sizing: border-box;
     font-size: 1.4rem;
     color: white;
-    background-color: green;
+    background-color: #009952;
     z-index: 997;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .heading > h4 {
@@ -23,6 +25,8 @@
 
 .tables {
     position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0 0 10px 10px;
     top: 30.5vh;
     min-height: 100.5vh;
     right: 10vw;
@@ -36,4 +40,9 @@
     box-sizing: border-box;
     overflow-y:auto;
     overflow-x: auto;
+}
+
+.heading4 {
+    padding-top: 12px;
+    border-top: 4px solid #7FB5FF;
 }

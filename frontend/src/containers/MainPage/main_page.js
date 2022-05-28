@@ -8,6 +8,7 @@ import card1 from '../../assets/card1.jpeg';
 import video from '../../assets/backgroundVideo.mp4';
 import cloud from '../../assets/cloud.jpg';
 
+
 class main_page extends Component {
     render() {
         return (
@@ -20,6 +21,7 @@ class main_page extends Component {
                             <video autoPlay loop muted className={Classes.video}>
                                 <source src={video} type={'video/mp4'} />
                             </video>
+
                             <div className={Classes.quote}><h1>What the Price of Copper Can Tell Us About the Stock Market?</h1><br />
                                 <div id={'circle'}></div><p>READ MORE</p>
                             </div>
