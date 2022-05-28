@@ -1,0 +1,41 @@
+.signupH1 {
+  color: #5ab946;
+}
+
+.signupFormContainer {
+  padding-top: 9vh;
+  justify-content: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 45vw;
+  height: 70vh;
+  position: absolute;
+  top: 8em;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.formGroup {
+  width: 35vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.signupFormInput {
+  padding: 0.5rem 0.7rem;
+  width: 25vw;
+}
+
+.signupCheckbox {
+  margin-right: 10px;
+}
+
+.signupButton {
+  color: white;
+  background-color: dodgerblue;
+}

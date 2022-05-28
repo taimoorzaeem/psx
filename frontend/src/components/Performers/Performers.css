@@ -1,0 +1,23 @@
+.body {
+    position: absolute;
+    top: 117vh;
+    right: 10vw;
+    width: 80%;
+    height: 83vh;
+    margin: 0 auto 10vh;
+    text-align: left;
+    background-color: #F5F5F5;
+    color: #333333;
+    box-sizing: border-box;
+    padding: 0 1.5em 1em;
+    font-size: 1.25rem;
+}
+
+.tables {
+    display: flex;
+    flex-direction: row;
+    height: 85%;
+    overflow:auto;
+    margin-left: 1em;
+    /* overflow-y: auto; */
+}

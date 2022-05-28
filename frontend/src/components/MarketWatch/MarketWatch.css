@@ -1,0 +1,15 @@
+.body {
+    position: absolute;
+    top: 202vh;
+    right: 10vw;
+    width: 80%;
+    min-height: 60vh;
+    margin: 0 auto 10vh;
+    text-align: left;
+    background-color: #F5F5F5;
+    color: #333333;
+    box-sizing: border-box;
+    padding: 0 1.5em 1em;
+    font-size: 1.25rem;
+    
+}

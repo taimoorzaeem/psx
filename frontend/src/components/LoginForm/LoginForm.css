@@ -1,0 +1,41 @@
+.loginH1 {
+  color: #5ab946;
+}
+
+.loginFormContainer {
+  padding-top: 8vh;
+  justify-content: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 45vw;
+  height: 60vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.loginFormGroup {
+  width: 35vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.loginFormInput {
+  padding: 0.5rem 0.7rem;
+  width: 25vw;
+}
+
+.loginCheckbox {
+  margin-right: 10px;
+}
+
+.loginButton {
+  color: white;
+  background-color: dodgerblue;
+}
