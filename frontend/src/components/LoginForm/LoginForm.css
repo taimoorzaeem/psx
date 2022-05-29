@@ -3,15 +3,10 @@
 }
 
 .loginFormContainer {
-  padding-top: 8vh;
-  justify-content: center;
-  padding-left: 5vw;
-  padding-right: 5vw;
   background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-  border: 1px solid black;
-  width: 45vw;
-  height: 60vh;
+  border: 1px solid gray;
+  width: 30vw;
+  height: 50vh;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -21,14 +16,39 @@
 }
 
 .loginFormGroup {
-  width: 35vw;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+}
+
+.loginFormElements {
+  width: 20vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .loginFormInput {
   padding: 0.5rem 0.7rem;
-  width: 25vw;
+  background-color: rgb(222, 229, 235);
+  margin-left: 45px;
+  width: 300px;
+  height: 30px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 50px;
+}
+
+.loginFormInput:focus {
+  margin-left: 45px;
+  width: 300px;
+  height: 30px;
+  border: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 50px;
+  border-color: gray;
 }
 
 .loginCheckbox {
@@ -36,6 +56,37 @@
 }
 
 .loginButton {
+  border: 0;
+  width: 5vw;
+  height: 4vh;
+  border-radius: 20px;
   color: white;
   background-color: dodgerblue;
+}
+.loginButton:hover {
+  cursor: pointer;
+  border: 0;
+  width: 5vw;
+  height: 4vh;
+  border-radius: 20px;
+  color: white;
+  background-color: blue;
+}
+
+.loginAnker {
+  color: dodgerblue;
+  font-size: small;
+}
+
+.loginButtonAnker {
+  margin-left: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.loginError {
+  margin-left: 45px;
+  color: #111;
+  background-color: tomato;
 }

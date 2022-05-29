@@ -3,32 +3,52 @@
 }
 
 .signupFormContainer {
-  padding-top: 9vh;
-  justify-content: center;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  background-color: white;
-  border-radius: 20px;
-  border: 1px solid black;
-  width: 45vw;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid gray;
+  width: 33vw;
   height: 70vh;
   position: absolute;
-  top: 8em;
+  top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   margin: auto;
 }
 
+.signupFormElements {
+  width: 20vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .formGroup {
-  width: 35vw;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
 }
 
 .signupFormInput {
   padding: 0.5rem 0.7rem;
-  width: 25vw;
+  background-color: rgb(222, 229, 235);
+  margin-left: 45px;
+  width: 300px;
+  height: 30px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 50px;
+}
+
+.signupFormInput:hover {
+  padding: 0.5rem 0.7rem;
+  background-color: rgb(222, 229, 235);
+  margin-left: 45px;
+  width: 300px;
+  height: 30px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 50px;
 }
 
 .signupCheckbox {
@@ -36,6 +56,30 @@
 }
 
 .signupButton {
+  border: 0;
+  width: 5vw;
+  height: 4vh;
+  border-radius: 20px;
   color: white;
   background-color: dodgerblue;
+}
+
+.signupButton:hover {
+  cursor: pointer;
+  border: 0;
+  width: 5vw;
+  height: 4vh;
+  border-radius: 20px;
+  color: white;
+  background-color: blue;
+}
+
+.signupAnker {
+  color: dodgerblue;
+}
+
+.signupError {
+  margin-left: 45px;
+  color: #111;
+  background-color: tomato;
 }
