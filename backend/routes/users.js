@@ -33,7 +33,7 @@ router.post("/", async (req, res) => {
     .send(_.pick(user, ["_id", "name", "email"]));
 });
 
-router.put('/preferences/:id', auth, async (req, res) => {
+router.put('/preferences/:id', async (req, res) => {
   const user = await User.findById(req.params.id);
   if (!user) return res.status(400).send(error.details[0].message);
 
@@ -42,6 +42,13 @@ router.put('/preferences/:id', auth, async (req, res) => {
   await user.save();
 
   res.send(true);
-})
+});
+
+router.get('/preferences/:id', async (req, res) => {
+  const user = await User.findById(req.params.id);
+  if (!user) return res.status(400).send(error.details[0].message);
+
+  res.send( { preferences: user.preferences} );
+});
 
 module.exports = router;

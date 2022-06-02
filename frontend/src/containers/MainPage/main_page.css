@@ -89,7 +89,7 @@ nav {
     left: 8em;
     z-index: 50;
     color: white;
-    font-family: 'Bitter', serif;
+    font-family: 'Bitter', serif !important;
     width: 30em;
     text-align: left;
     /* font-size: 2rem; */
@@ -175,7 +175,7 @@ hr {
 
 .section3 {
     background-color: white;
-    font-family: 'Bitter', serif;
+    font-family: 'Bitter', serif !important;
     min-height: 200px;
     width: 100%;
     color: #4D4C5C;
@@ -208,7 +208,7 @@ hr {
 .s4_heading {
     font-size: 2.5rem;
     font-weight: 100;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis', sans-serif !important;
     color: #4D4C5C;
     margin-bottom: 2em;
     text-align: center;
@@ -243,7 +243,7 @@ hr {
 }
 
 .s4_body_text {
-    font-family: 'Bitter', serif;
+    font-family: 'Bitter', serif !important;
     color: #79DAE8;
     font-size: 8rem;
     padding: 0;
@@ -251,7 +251,7 @@ hr {
 
 .s4_message {
     position: absolute;
-    font-family: 'Bitter', serif;
+    font-family: 'Bitter', serif !important;
     font-weight: bold;
     font-size: 1rem;
     text-align: left;

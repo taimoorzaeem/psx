@@ -3,6 +3,8 @@
 
 .body {
     background-color: #24252a;
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 8.5vh;
     position: fixed;
@@ -37,13 +39,12 @@ header {
 .nav__links{
     list-style: none;
     text-align: center;
-    margin: 0 18rem;
+    margin: 0 1rem;
 }
 
 .nav__links li {
     transition: 0.2s;
     display: inline-block;
-    font-weight: 900;
     border-bottom: 4px solid transparent;
 }
 a {
@@ -54,18 +55,20 @@ a {
 
 .nav__links a:hover {
     background-color: #0088a9;
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid white !important;
     cursor: pointer;
+    
 }
 
 .active {
     border-bottom: 4px solid #0088a9;
     cursor: pointer;
+    font-weight: 700 !important;
 }
 
 .nav__links li a {
     transition: all 0.3s ease 0s;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* 
@@ -119,6 +122,7 @@ a {
     outline: none;
     position: relative;
     cursor: pointer;
+    margin-left: 18rem;
     /* left: 40rem; */
     z-index: 1;
     border-radius: 5px;
@@ -140,17 +144,15 @@ a {
 .logo_name {
     font-family: 'Ubuntu', sans-serif;
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     cursor: pointer;
+    /* padding-bottom: 4px;
+    padding-top: 4px; */
     border-bottom: 4px solid transparent;
     transition: 200ms;
 }
 
 .logo_name:hover {
     border-bottom: 4px solid white;
-}
-
-.signupSpan {
-    color: white;
 }

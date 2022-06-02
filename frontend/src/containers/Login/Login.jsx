@@ -5,7 +5,7 @@ class Login extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
+        <div style={{backgroundColor: '#DAE5D0', width: '100%', height:'100%'}}>
           <LoginForm />
         </div>
       </React.Fragment>
